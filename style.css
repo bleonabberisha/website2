@@ -157,6 +157,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.rounded_sides2 {
+    border-radius: 100%;
+}
 
 h1,
 h2 {
@@ -222,4 +225,8 @@ body {
 li {
   font-size: 25px;
   font-family: Bromilo;
+}
+
+.center{
+    text-align: center;
 }
