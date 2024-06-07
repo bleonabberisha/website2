@@ -9,7 +9,7 @@ html {
   --fs-xxl: 6.4rem;
   --fs-xl: 4.5rem;
   --fs-l: 3rem;
-  --fs-m: 1.75rem;
+  --fs-m: 1.3rem;
   --fs-s: 1rem;
   --fs-xs: 0.7rem;
 
@@ -51,7 +51,6 @@ p {
   font-family: var(--ff-main);
   font-size: var(--fs-m);
   color: var(--sekundaer-clr);
-  text-align: left;
 }
 
 body {
@@ -159,48 +158,68 @@ img {
   height: auto;
 }
 
-
-  
-
 h1,
 h2 {
-    text-align: center;
+  text-align: center;
   margin: 0; /* Remove default margin */
   padding: -10px 0; /* Add a little padding for spacing */
 }
-
+p {
+  text-align: center;
+  margin: 5%;
+}
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 .content {
-    flex: 1;
+  flex: 1;
 }
 .footer {
-    background-color: #B89B89;
-    text-align: center;
-    padding: 20px;
+  background-color: #b89b89;
+  text-align: center;
+  padding: 20px;
 }
 .footer a {
-    color: white; /* Link color */
-    margin: 0 10px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 0;
+  color: white; /* Link color */
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 0;
 }
 .footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Mobilvenlig styling */
 @media (max-width: 600px) {
-    .footer {
-        padding: 10px;
-    }
-    .footer a {
-        display: block;
-        margin: 5px 0;
-    }
+  .footer {
+    padding: 10px;
+  }
+  .footer a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+.text-box {
+  background-color: #9c8360;
+  color: white;
+  padding: 25px;
+  border-radius: 80px;
+  max-width: 600px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-box p {
+  margin: 10px 0;
+  text-align: left;
+  color: var(--femdaer-clr);
+}
+
+li {
+  font-size: 25px;
+  font-family: Bromilo;
 }
