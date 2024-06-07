@@ -3,4 +3,57 @@
   src: url();
 }
 
+html {
+--fs-body:20px;
+/*default styling*/
+--fs-xxl:6.4rem;
+--fs-xl:4.5rem;
+--fs-l:3rem;
+--fs-m:1.75rem;  
+--fs-s:1rem;
+--fs-xs:0.7rem;
+
+  --primaer-clr: #6a3e2f;
+  --sekundaer-clr: #e3d2c3;
+  --tridaer-clr: #B89B89;
+  --firdaer-clr: #694D3C;
+  --femdaer-clr: #FFFFFF;
+  
+  --ff-headlines:"Brolimo", sans-serif;
+  --ff-main: "Lato", sans serif;
+}
+
+main {
+    font-family: var(--ff-main);
+    font-size: var(--fs-s);
+    color: var(--sekundaer-clr)
+}
+
+h1 {
+    font-family: var(--ff-headlines);
+    font-size: var(--fs-xl);
+    color: var(--sekundaer-clr);
+}
+
+h2 {
+    font-family: var(--ff-headlines);
+    font-size: var(--fs-xl);
+    color: var(--sekundaer-clr);
+}
+
+h3 {
+    font-family: var(--ff-headlines);
+    font-size: var(--fs-l);
+    color: var(--tridaer-clr);
+}
+
+p {
+    font-family: var(--ff-main);
+    font-size: var(--fs-m);
+    color: var(--femdaer-clr);
+}
+
+body {
+    background-color: var(--primaer-clr);
+}
 
