@@ -198,3 +198,57 @@ body {
     padding: 10px;
   }
 }
+.footer a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+.text-box {
+  background-color: #9c8360;
+  color: white;
+  padding: 25px;
+  border-radius: 80px;
+  max-width: 600px;
+  margin: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-box p {
+  margin: 10px 0;
+  text-align: left;
+  color: var(--femdaer-clr);
+}
+
+li {
+  font-size: 25px;
+  font-family: Bromilo;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  background-color: #69563c; /* Baggrundsfarve */
+  color: #e3d2c3; /* Tekstfarve */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #574d34; /* Mørkere baggrundsfarve ved hover */
+}
+
+video {
+  max-width: 70%;
+}
+
+.rounded_sides4 {
+    border-radius: 10%;
+}
