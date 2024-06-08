@@ -131,6 +131,18 @@ body {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    flex-direction: column; /* Stack images vertically */
+    margin-top: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 img {
@@ -199,9 +211,8 @@ body {
   }
 }
 .footer a {
-    display: block;
-    margin: 5px 0;
-  }
+  display: block;
+  margin: 5px 0;
 }
 .text-box {
   background-color: #9c8360;
@@ -250,5 +261,12 @@ video {
 }
 
 .rounded_sides4 {
-    border-radius: 10%;
+  border-radius: 10%;
 }
+
+.nav-logo {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
