@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tema 4</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <!-- <a href="#" class="nav-logo">LOGO</a> -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Forside</a>
+          </li>
+          <li class="nav-item">
+            <a href="ommig.html" class="nav-link">Om mig</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2>Grundlæggende animation</h2>
+      <div class="center">
+        <h3>idegenereing, stil analyse og adobe illustrator</h3>
+        <p>
+          I tema 4 arbejdede vi med idégenerering og stilanalyse. Til
+          idégenerering valgte jeg et verbum, et sted og en ting: "hoppe", "på
+          en skole" og "en blyant". Disse elementer brugte jeg til at udvikle
+          min spilidé. For stilen valgte jeg Kawaii 3 og 4, da jeg mente, at de
+          rundede, rummelige og søde figurer passede bedst til børn. Vi lærte
+          også at bruge Adobe Illustrator, hvor vi importerede vores tegninger
+          af figurer og skærme og lærte at tegne dem digitalt. Det var
+          udfordrende i starten, men blev lettere med tiden. Herunder kan man se
+          de illustrationer, jeg har lavet i Adobe Illustrator, som indgår i mit
+          spil
+        </p>
+        <img src="img/billede14.jpg" alt="js1" class="rounded_sides4" />
+        <img src="img/billede15.jpg" alt="js2" class="rounded_sides4" />
+        <img src="img/billede16.jpg" alt="js3" class="rounded_sides4" />
+        <img
+          src="img/billede17.jpg"
+          alt="aktivitetsdiagram"
+          class="rounded_sides2"
+        />
+        <h3>Forskellige diagrammer</h3>
+        <p>
+          Aktivitetsdiagram Et aktivitetsdiagram viser det overordnede flow af
+          handlinger og beslutninger i et program. Det beskriver aktivitet og
+          består af detaljerede handlinger og beslutninger. Det viser også trin
+          for trin når man spiller og hvordan man vinder/taber.
+        </p>
+        <p>
+          State Machine Diagram Det viser de forskellige tilstande et system kan
+          have og hvordan det skifter mellem dem baseret på hændelser. Det giver
+          et detaljeret overblik over systemets adfærd.
+        </p>
+        <p>
+          Anvendelse i Visual Studio Code I Visual Studio Code kan du bruge
+          plugins til at skabe og visualisere aktivitets- og state machine
+          diagrammer, hvilket hjælper med planlægning og dokumentation af koden.
+        </p>
+        <div class="text-box">
+          <h3>javascript</h3>
+          <p>
+            I et tidligere tema lærte vi kort om JavaScript, men i dette tema
+            var det vores hovedfokus. JavaScript gør hjemmesider levende og
+            interaktive. Det kan ændre CSS og HTML og bruges til mange ting, som
+            at reagere på brugerens handlinger, tjekke formularer og lave
+            animationer. Vi brugte JavaScript til at skabe en levende animation,
+            altså et helt videospil.
+          </p>
+          <div class="center">
+            <h3>Eventlisteners</h3>
+            <p>
+              window.addEventListener("load", start);: Starter spillet, når
+              vinduet er loadet.
+            </p>
+            <p>
+              document.querySelector("#til_info"). addEventListener("click",
+              info);: Skifter til informationsskærmen, når der klikkes på
+              informationsknappen.
+            </p>
+            <p>
+              document.querySelector("#play"). addEventListener("click",
+              startGame);: Starter spillet, når der klikkes på play-knappen.
+            </p>
+            <h3>Funktioner</h3>
+            <p>De vigtigeste funktioner jeg har i mit spil;</p>
+            <p>start(): Viser startskærmen og sætter event listeners op.</p>
+            <p>info(): Viser informationsskærmen.</p>
+            <p>
+              startGame(): Initialiserer spillet ved at nulstille point og liv,
+              samt starte animationerne.
+            </p>
+            <p>
+              clickHaand() og clickFinger(): Håndterer klik på de forskellige
+              objekter, opdaterer point og liv, og stopper animationer.
+            </p>
+            <p>
+              resetHaand() og resetFinger(): Nulstiller animationer og
+              positioner for de forskellige objekter.
+            </p>
+            <p>
+              endGame(): Stopper spillet og viser enten game over eller level
+              complete skærmen afhængig af point og liv.
+            </p>
+            <p>
+              gameOver() og levelComplete(): Viser henholdsvis game over og
+              level complete skærmen og sætter event listeners for at spille
+              igen.
+            </p>
+            <h3>Hjælpefunktioner</h3>
+            <p>
+              generateRandomNumber(antal): Genererer et tilfældigt tal mellem 1
+              og antal.
+            </p>
+            <p>
+              hideAllScreens(): Skjuler alle skærme ved at tilføje klassen
+              "hide".
+            </p>
+            <h3>Forkorte Js</h3>
+            <p>
+              Brug af Hjælpefunktioner: Funktionen generateRandomNumber(antal)
+              bruges flere gange for at undgå gentagelse af kode, der genererer
+              tilfældige tal. Dette gør koden kortere og mere overskuelig.
+            </p>
+            <p>
+              CSS Klasser: Ved at tilføje og fjerne CSS klasser som fald,
+              forsvind, frys, osv., styres animationer og ændringer af
+              elementernes udseende effektivt
+            </p>
+            <video controls autoplay muted>
+                <source src="vid/videospil.mov" type="video/mp4">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <a href="ommig.html">Om Mig</a>
+        <a href="t2.html">T2</a>
+        <a href="t3.html">T3</a>
+        <a href="t4.html">T4</a>
+        <a href="t5.html">T5</a>
+      </footer>
+  </body>
 </html>
